@@ -1,0 +1,17 @@
+server:
+  port: 8848
+  max-http-header-size: 4048576 #Request header is too large异常解决
+spring:
+  application:
+    name: COMMON-SERVICE
+  data:   # es的配置
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 127.0.0.1:9300 #java的客户端要用9300 服务器地址
+eureka:
+  instance:
+    hostname: localhsot
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/

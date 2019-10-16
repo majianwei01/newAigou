@@ -1,0 +1,12 @@
+package com.majianwei.plat.query;
+
+import com.majianwei.util.BaseQuery ;
+
+
+/**
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+public class ${table.entityName}Query extends BaseQuery{
+}
